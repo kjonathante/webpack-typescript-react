@@ -1,6 +1,8 @@
+```
 yarn add --dev webpack webpack-cli webpack-dev-server typescript ts-loader 
 yarn add lodash
 yarn add --dev @types/lodash
+```
 
 ```json
 // tsconfig.json
