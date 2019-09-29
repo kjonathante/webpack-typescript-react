@@ -1,7 +1,7 @@
 ```
 yarn add --dev webpack webpack-cli webpack-dev-server typescript ts-loader 
-yarn add lodash
-yarn add --dev @types/lodash
+yarn add react react-dom
+yarn add --dev @types/react @types/react-dom
 ```
 
 ```json
