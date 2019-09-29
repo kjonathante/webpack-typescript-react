@@ -23,7 +23,7 @@ yarn add --dev @types/react @types/react-dom
 const path = require('path');
 
 module.exports = {
-  entry: './src/index.ts',
+  entry: './src/index.tsx',
   module: {
     rules: [
       {
