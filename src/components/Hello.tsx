@@ -1,5 +1,5 @@
 import * as React from "react";
-import "./h1.css";
+import * as style from "./Hello.module.styl"
 
 export interface HelloProps {
   compiler: string;
@@ -11,9 +11,9 @@ export interface HelloProps {
 export class Hello extends React.Component<HelloProps, {}> {
   render() {
     return (
-      <h1>
+      <h2 className={style.test}>
         Hello from {this.props.compiler} and {this.props.framework}!
-      </h1>
+      </h2>
     );
   }
 }

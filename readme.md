@@ -4,6 +4,8 @@ yarn add react react-dom
 yarn add --dev @types/react @types/react-dom
 
 yarn add --dev style-loader css-loader typed-css-modules-webpack-plugin
+
+yarn add --dev stylus-loader stylus
 ```
 
 ```json

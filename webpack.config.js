@@ -11,10 +11,29 @@ module.exports = {
         exclude: /node_modules/
       },
       {
+        test: /\.styl$/,
+        exclude: /\.module\.styl$/,
+        use: ["style-loader", "css-loader", "stylus-loader"]
+      },
+      {
+        test: /\.module\.styl$/,
+        use: [
+          "style-loader",
+          // Use CSS Modules
+          {
+            loader: "css-loader",
+            options: {
+              modules: true
+            }
+          },
+          "stylus-loader"
+        ]
+      },
+      {
         // For pure CSS (without CSS modules)
         test: /\.css$/,
         exclude: /\.module\.css$/,
-        use: ['style-loader', 'css-loader'],
+        use: ["style-loader", "css-loader"]
       },
       {
         test: /\.module\.css$/,
