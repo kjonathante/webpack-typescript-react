@@ -4,6 +4,8 @@ import * as ReactDOM from "react-dom";
 import { Hello } from "./components/Hello";
 import { Hola } from "./components/Hola";
 
+import "./index.css"
+
 ReactDOM.render(
     <div>
         <Hello compiler="TypeScript" framework="React" />
